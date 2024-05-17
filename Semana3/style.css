@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+main {
+    padding: 20px;
+}
+.description {
+    margin-bottom: 30px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.gallery img {
+    width: calc(33.333% - 10px);
+    height: auto;
+    border-radius: 5px;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    
+}
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-wrapper iframe {
+    border-radius: 5px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form input, .form-container form textarea, .form-container form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+.h1{
+font-size: 5rem;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center;
+color: red;
+
+
+}
+
+.texto{
+    color: white;
+    
+
+}
+.fondo{
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
