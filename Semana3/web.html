@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="./output.css" rel="stylesheet">
 
 </head>
 <body class="fondo">
@@ -15,18 +16,53 @@
         AOS.init();
       </script>
 
-<header>
+
+<nav class="bg-black dark:bg-gray-900 absolute w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 nav">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+        
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black">
+        <li>
+          <a href="#Inicio" class="block py-2 px-3 text-white rounded md:bg-transparent " aria-current="page">Inicio</a>
+        </li>
+        <li>
+          <a href="#Galeria" class="block py-2 px-3 text-white rounded md:bg-transparent dark:border-gray-700">Galeria</a>
+        </li>
+        <li>
+          <a href="#Video" class="block py-2 px-3 text-white rounded md:bg-transparent">Video</a>
+        </li>
+        <li>
+          <a href="#Contacto" class="block py-2 px-3 text-white rounded md:bg-transparent">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>  
+
+
+<hr>
+
+<header style="margin-top: 100px;">
     <h1 class="h1" data-aos="flip-down">Scorpion</h1>
 </header>
 
+<hr>
 <main>
-    <section class="description texto" data-aos="flip-down">
+    <section id="Inicio" class="description texto" data-aos="flip-down">
         <h2>¿Por qué me gusta "Scorpion"?</h2>
         <p>Me gusta "Scorpion" porque ofrece una mezcla única de ciencia y acción. Los personajes son extremadamente inteligentes y cada episodio presenta desafíos tecnológicos complejos que el equipo debe resolver. La dinámica entre los miembros del equipo, cada uno con habilidades y personalidades únicas, agrega profundidad y humor a la serie. Además, los episodios están llenos de giros inesperados y escenas de alta tensión que mantienen al espectador enganchado de principio a fin.</p>
         <p><strong>Scorpion</strong> es una emocionante serie de televisión que sigue las aventuras del genio Walter O'Brien y su equipo de brillantes inadaptados. Juntos, forman un grupo de élite que trabaja como contratistas para el Departamento de Seguridad Nacional de los Estados Unidos. La serie combina acción, drama y elementos de comedia para crear una narrativa cautivadora y llena de adrenalina.</p>
     </section>
-
-    <section style="margin-bottom: 60px;"data-aos="flip-down">
+<hr>
+    <section id="Galeria" style="margin-bottom: 60px; margin-top: 60px;"data-aos="flip-down">
         <div class="grid grid-cols-2 gap-2">
             <div>
                 <img class="h-auto max-w-full rounded-lg" src="imagenes1.jpg" alt="">
@@ -42,12 +78,12 @@
             </div>
         </div>
     </section>
-
-    <div class="video-container" data-aos="flip-down">
+<hr>
+    <div id="Video" class="video-container" data-aos="flip-down">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UqXMyUf7Fbk?si=ceqTcvCqjuq6vAY1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-
-    <section class="form-container" data-aos="flip-down">
+<hr>
+    <section id="Contacto"class="form-container" data-aos="flip-down">
         <form class="max-w-sm mx-auto">
             <div class="mb-5">
               <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white">Nombre</label>
@@ -65,7 +101,7 @@
           </form>
     </section>
 </main>
-
+<hr>
 
 <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.js"></script>
 

@@ -31,6 +31,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    margin-top: 60px;
     
 }
 .video-wrapper {
@@ -45,6 +46,8 @@ main {
 .form-container {
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .form-container form {
     display: flex;
@@ -60,13 +63,14 @@ main {
     background-color: #333;
     color: white;
     cursor: pointer;
+    
+
 }
 .h1{
 font-size: 5rem;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 text-align: center;
 color: red;
-
 
 }
 
@@ -78,4 +82,9 @@ color: red;
 .fondo{
     background-repeat: no-repeat;    
     background-size: cover;
+}
+
+.nav{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
